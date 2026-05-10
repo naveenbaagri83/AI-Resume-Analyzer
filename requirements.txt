@@ -4,3 +4,5 @@ PyPDF2
 plotly
 scikit-learn
 Pillow
+google-generativeai
+requests
