@@ -5,9 +5,13 @@ import plotly.graph_objects as go
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import keys
+    GEMINI_API_KEY = keys.GEMINI_KEY
+    YOUTUBE_API_KEY = keys.YOUTUBE_KEY
+except ImportError:
+    # Agar keys.py nahi milti (jaise Streamlit Cloud par), toh Secrets se uthayein
+    GEMINI_API_KEY = st.secrets["GEMINI_KEY"]
+    YOUTUBE_API_KEY = st.secrets["YOUTUBE_KEY"]
 
-GEMINI_API_KEY = keys.GEMINI_KEY
-YOUTUBE_API_KEY = keys.YOUTUBE_KEY
 
 # --- 1. UNIVERSAL KNOWLEDGE BASE ---
 st.set_page_config(page_title="Universal AI Career Mentor", layout="wide")
