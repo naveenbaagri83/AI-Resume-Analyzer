@@ -4,6 +4,10 @@ import PyPDF2
 import plotly.graph_objects as go
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import keys
+
+GEMINI_API_KEY = keys.GEMINI_KEY
+YOUTUBE_API_KEY = keys.YOUTUBE_KEY
 
 # --- 1. UNIVERSAL KNOWLEDGE BASE ---
 st.set_page_config(page_title="Universal AI Career Mentor", layout="wide")
