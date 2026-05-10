@@ -1,4 +1,5 @@
 🎯 Smart-Path AI: Career Skill-Gap Analyzer
+
 🚀 Overview
 This is an End-to-End Data Science project designed to bridge the gap between job seekers and their dream roles. The tool utilizes Natural Language Processing (NLP) to analyze and compare a user's Resume (PDF) against a specific Job Description (JD). It provides an interactive matching score and identifies missing skills to help candidates optimize their profiles.
 
